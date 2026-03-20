@@ -1,1 +1,17 @@
+class Book:
+    
+    # Constructor
+    def __init__(self, title):
+        self.title = title
+        print(f"Constructor: Book '{self.title}' is created")
+    
+    # Destructor
+    def __del__(self):
+        print(f"Destructor: Book '{self.title}' is destroyed")
 
+
+# Create object (constructor is called)
+book1 = Book("OOP Basics")
+
+# Delete object (destructor is called)
+del book1
